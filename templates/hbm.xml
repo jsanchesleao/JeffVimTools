@@ -12,7 +12,7 @@
     <property name="" column="" />
 
     <!--
-    <many-to-one name="" cascadeAll="" column="" foreign-key="" />
+    <many-to-one name="" cascade="all" column="" foreign-key="" />
     -->
   </class>
 </hibernate-mapping>
