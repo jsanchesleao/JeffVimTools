@@ -1,0 +1,30 @@
+<DOCTYPE hibernate-configuration SYSTEM 
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class"></property>
+		<property name="hibernate.connection.url"></property>
+		<property name="hibernate.connection.username"></property>
+		<property name="hibernate.dialect"></property>
+
+		<!-- Use c3p0 connection pool provider-->
+		<!--
+		<property name="hibernate.c3p0.min_size"></property>
+		<property name="hibernate.c3p0.max_size"></property>
+		<property name="hibernate.c3p0.timeout"></property>
+		<property name="hibernate.c3p0.max_statements"></property>
+		<property name="hibernate.c3p0.idle_test_period"></property>
+		-->
+
+		<!-- Show and print nice SQL on stdout -->
+		<!--
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		-->
+
+		<!-- List of XML mapping files-->
+		<mapping resource="path/to/xml/mapping/file.hbm.xml" />
+	
+	</session-factory>
+</hibernate-configuration>
