@@ -2,7 +2,6 @@
 :nmap <C-j>pcl :call GenerateJavaClass("public ")<CR>
 :nmap <C-j>ocl :call GenerateJavaClass("protected ")<CR>
 :nmap <C-j>rcl :call GenerateJavaClass("private ")<CR>
-:nmap <C-j>? :call GeneratePrototype()<CR>
 :nmap <C-j>b :call GenerateBeanProperty()<CR>
 
 fu! GenerateJavaClass(modifier)
@@ -20,7 +19,3 @@ fu! GenerateBeanProperty()
 	execute("normal o\<CR>\<Esc>i\<Tab>\<Esc>")
 endf
 
-fu! GeneratePrototype()
-	let proto = input("What prototype? ")
-	execute("normal :r ~/.vim/JeffVimTools/templates/" . proto . "\<CR>")
-endf
