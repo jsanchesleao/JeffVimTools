@@ -6,9 +6,9 @@
 :imap \while while(<space><Esc>mwa<space><space>){<Esc>a<CR><CR>}<Esc>`wa
 :imap \do do{<CR><CR>}while(<space><Esc>mda<space><space>)<Esc>`da
 :imap \if if(<space><Esc>mia<space><space>){<Esc>a<CR><CR>}<Esc>`wi
-:imap \try try{<CR><tab><Esc>mta<CR>}<Esc>`t
+:imap \try try{<Esc>a<CR><Esc>mta<CR>}<Esc>`t
 :imap \catch catch(<space><Esc>mca<space>ex){<Esc>a<CR><CR>}<Esc>`ca
-:imap \finally finally{<CR><tab><Esc>mfa<CR>}<Esc>`f
+:imap \finally finally{<Esc>a<CR><Esc>mfa<CR>}<Esc>`f
 
 :imap ;p public<space>;
 :imap ;t static<space>;
